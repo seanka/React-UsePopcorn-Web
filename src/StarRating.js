@@ -11,7 +11,7 @@ const starContainerStyle = {
   gap: "4px",
 };
 
-export default function StarRating({ maxRating = 5, color = "#fcc419", size = 48, messages = [], defaultRating = 0, onSetRating }) {
+export default function StarRating({ maxRating = 5, color = "#fcc419", size = 48, messages = [], defaultRating = 0, onSetRating = () => {} }) {
   const [rating, setRating] = useState(defaultRating);
   const [tempRating, setTempRating] = useState(0);
 
